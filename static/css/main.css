@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    font-family: 'Netflix Sans', Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+p {
+    color: aliceblue;
+}
+
+h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.movie-poster {
+    height: 200px;
+    padding-inline: 20px;
+}
+
+.background-img {
+    background-image: url('../images/background-netflix.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-message {
+    color: rgba(198, 83, 83, 0.82);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.form input[type="text"] {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.form input[type="submit"] {
+    width: 200px;
+    border-radius: 5px;
+    background-color: #e50914;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.movie-column {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.movie-column:hover {
+    transform: translateY(-5px);
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+}

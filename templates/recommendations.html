@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Movie Recommendations</title>
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h3>Movie Recommendations for {{ movie_name }}</h3>
+        <div class="movie-container">
+            {% for index in range(0, recommendations|length) %}
+                <div class="movie-column">
+                    <img src="{{ posters[index] }}" alt="Movie Poster" class="movie-poster">
+                    <p>{{ recommendations[index] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
